@@ -1,0 +1,16 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "nuxt": "latest",
+    "socket.io": "^1.7.2",
+    "socket.io-client": "^1.7.2"
+  },
+  "author": "",
+  "license": "ISC"
+}

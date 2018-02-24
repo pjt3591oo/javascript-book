@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>vue 시작하기!!</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+
+        <div id="start">
+            <div>
+              <input type="checkbox" value="1" v-model="checks">
+              <label>1</label>
+              <input type="checkbox" value="2" v-model="checks">
+              <label>2</label>
+              <input type="checkbox" value="3" v-model="checks">
+              <label>3</label>
+              <br>
+              <h1>체크리스트: {{ checks }}</h1>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+        let app = new Vue({
+            el: '#start',
+            data () {
+                return {
+                    checks: []
+                }
+            }
+        })
+        </script>
+    </body>
+</html>

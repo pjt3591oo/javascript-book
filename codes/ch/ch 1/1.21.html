@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>vue 시작하기!!</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+
+        <div id="start">
+            <ul>
+                <li v-for="data in calcDataSet">{{data.t}}</li>
+            </ul>
+        </div>
+
+        <script type="text/javascript">
+        let app = new Vue({
+            el: '#start',
+            data () {
+                return {
+                    dataSet: [
+                        { t: 1 },
+                        { t: 2 },
+                        { t: 3 },
+                        { t: 4 }
+                    ]
+                }
+            },
+            computed: {
+                calcDataSet : function () {
+                    return this.dataSet.filter(function (item){
+                        return  ! (item.t % 3)
+                    })
+                }
+            }
+        })
+        </script>
+    </body>
+</html>

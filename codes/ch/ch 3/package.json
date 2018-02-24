@@ -1,0 +1,19 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test package.",
+  "main": "3.1.js",
+  "scripts": {
+    "start": "pm2 start app.js -n testServer",
+    "stop": "pm2 stop testServer",
+    "delete": "pm2 delete testServer"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "jade": "^1.11.0"
+  }
+}

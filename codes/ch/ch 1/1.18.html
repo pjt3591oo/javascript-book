@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>vue 시작하기!!</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+
+        <div id="start">
+            <div class="tab_select">
+                <input type="radio" value="1" v-model="tabPick">
+                <label>1</label>
+                <input type="radio" value="2" v-model="tabPick">
+                <label>2</label>
+            </div>
+
+            <div class="condition">
+                <div v-if="tabPick == '1'">
+                    <h1>1 탭을 클릭했습니다.</h1>
+                </div>
+                <div v-else-if="tabPick == '2'">
+                    <h1>2 탭을 클릭했습니다.</h1>
+                </div>
+                <div v-else>
+                    <h1>알 수 없는 탭을 클릭했습니다.</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <script type="text/javascript">
+        let app = new Vue({
+            el: '#start',
+            data () {
+                return {
+                    tabPick: '1'
+                }
+            }
+        })
+        </script>
+    </body>
+</html>

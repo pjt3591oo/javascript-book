@@ -1,0 +1,9 @@
+{
+  "name": "hello_world",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "nuxt": "^1.1.1"
+  }
+}

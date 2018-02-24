@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>vue 시작하기!!</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+
+        <div id="start">
+            <h1 v-if="condition1">1</h1>
+            <h1 v-if="condition2">2</h1>
+        </div>
+
+        <script type="text/javascript">
+        let app = new Vue({
+            el: '#start',
+            data () {
+                return {
+                    condition1: true,
+                    condition2: false
+
+                }
+            }
+        })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>vue 시작하기!!</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+
+        <div id="start"></div>
+
+        <script type="text/javascript">
+        let app = new Vue({
+            el: '#start',
+            created () {
+                console.log('created')
+            },
+            beforeCreate () {
+                console.log('beforeCreated')
+            },
+            mounted () {
+                console.log('mounted')
+            },
+            beforeMount () {
+                console.log('beforeMounted')
+            }
+        })
+        </script>
+    </body>
+</html>
