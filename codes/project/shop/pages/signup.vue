@@ -38,7 +38,7 @@ export default {
                     this.$nuxt.$router.replace({ path: '/signin' })
                 }
             }else{
-                alert('양싱이 비었거나 초기자금이 문자가 포함되어있습니다.')
+                alert('양식이 비었거나 초기자금이 문자가 포함되어 있습니다.')
             }
         }
     }
